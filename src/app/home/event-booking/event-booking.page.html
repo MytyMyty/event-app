@@ -1,0 +1,12 @@
+
+<script>
+  function logEventAndEstadio(){
+    const event_id = JSON.parse(localStorage.getItem('event')).id;
+    const estadio_id = JSON.parse(localStorage.getItem('estadio')).id;
+    const planoEstadio = planoEstadio.find(plano => plano.id == estadio_id)
+    const seatRows = planoEstadio?.nombre;
+    console.log(`Seat Rows: ${seatRows}`);
+  }
+</script>
+
+
